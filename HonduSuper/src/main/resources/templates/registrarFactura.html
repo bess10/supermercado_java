@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="ISO-8859-1" content="text/html; charset=UTF-8">
+<title>HonduSuper</title>
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+	crossorigin="anonymous">
+
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <img th:src="@{/images/logo1.png}" width="170" height="150">
+ <h2>Bienvenido a HonduSuper</h2>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+       <a class="nav-link" th:href="@{/factura/listaFactura}">Listado de facturas</a>
+      </li>
+       </li>
+      <li class="nav-item ">
+        <a class="nav-link" th:href="@{/}" >Inicio<span class="sr-only"></span></a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</nav>
+</header>
+
+<div class="card">
+  <div class="card-header">
+    Factura
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Registro de factura</h5>
+    <p class="card-text">Seleccione Factura si desea crear una nueva factura o seleccione Producto si desea agregar productos a la factura correspondiente . </p>
+<div class="d-grid gap-1 col-3 mx-auto">
+ <a   class="btn btn-primary active" th:href="@{/factura/Factura}" role="button" data-bs-toggle="button" aria-pressed="true">Factura</a>
+ <a   class="btn btn-primary active" th:href="@{/factura/detalleFactura}" role="button" data-bs-toggle="button" aria-pressed="true">Productos</a>
+
+</div>
+ </div>
+</div>
+
+ 
+<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+</body>
+</html>
